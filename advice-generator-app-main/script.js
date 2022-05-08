@@ -9,11 +9,11 @@ function retrieveCompl(){
 }
 function updateComplDisplay(slipObj){
     var complObj = slipObj['slip'];
-    document.querySelector("#advice-id").textContent = id;
     var {id, advice} = complObj;
+    document.querySelector("#advice-id").textContent = id;
     document.querySelector(".advice-text").textContent = '"'+advice+'"';
 }   
-//document.querySelector('.dice-container')
-    //.addEventListener('click', retrieveCompl);
+document.querySelector('.dice-container')
+    .addEventListener('click', retrieveCompl);
 
-//retrieveCompl();
+retrieveCompl();
