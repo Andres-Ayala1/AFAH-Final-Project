@@ -4,25 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Complimentr</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Andres Ayala</a>.
-  </div>
+  <main class="main-container">
+  <section class="advice-box">
+    <h1>Compliment #<span id ="advice-id"></span></h1>
+    <p class="advice-text">""</p>
+    <img class="pattern-divider" src="images/pattern-divider-mobile.svg" srcset="images/pattern-divider-mobile.svg 350w, images/pattern-divider-desktop.svg 600w" sizes="(max-width: 800px) 350px, 800px" alt="pattern divider">
+    <div class="dice-container" onclick="retrieveCompl()">
+      <img id="dice-icon" src="images/icon-dice.svg" alt="randomizer-icon">
+    </div>
+</section>
+</main>
+  <footer class="attribution"> 
+    Coded by <a href="https://www.linkedin.com/in/andres-ayala-">Andres Ayala</a>.
+  </footer>
 </body>
+<script src="script.js"></script>
 </html>
