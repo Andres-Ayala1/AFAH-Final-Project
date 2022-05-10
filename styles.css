@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-
+@import url('knight-lab/timelinejs/dist/css/timeline.css');
 
 *{
     padding:0;
@@ -17,7 +17,7 @@
 
     font-family: 'Manrope', sans-serif;
     font-size: 10px;
-    background-color: var(--dark-blue);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/background.jpeg);
 }
 .attribution { 
      font-size: 11px; text-align: center;
@@ -38,10 +38,26 @@
     width: 35rem;
     height: 95vh;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     display: flex;
     justify-content: center;
+}
+.tl {
+    border-radius: 20px;
+    height: 80vh;
+}
+.spotify-icon {
+    position: absolute;
+    cursor:pointer;
+}
+.dice-container:hover {
+    transform: scale(1.5);
+}
+.playlist {
+    padding-top: 20px;
+    font-size: large;
+    color: var(--neon-green);
 }
 /* COMPLIMENT TEXT */
 h1 {
@@ -54,7 +70,7 @@ h1 {
 }
 .dice-container {
     position: relative;
-    background: var(--neon-green);
+    background: var(--dark-grayish-blue);
     width: fit-content;
     border-radius: 50%;
     padding: 1.4rem;
@@ -62,6 +78,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.tl-timemarker, .tl-timemarker-content-container, .tl-timemarker-content {
+    background: beige;
 }
 .advice-text {
     color:white;
